@@ -1,55 +1,60 @@
 <!DOCTYPE html>
-<html lang="ca">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio de Projectes - Inici</title>
+    <title>Portafolio Personal</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Menú lateral -->
-    <nav class="sidebar">
-        <div class="logo">Portfolio</div>
-        <div class="nav-links">
-            <a href="index.html" class="active">Inici</a>
-            <a href="projectes.html">Projectes</a>
-            <a href="contacte.html">Contacte</a>
-        </div>
-    </nav>
-
-    <!-- Contingut principal -->
-    <main class="content">
-        <section class="hero">
-            <h1>Benvingut al meu Portfolio</h1>
-            <p>Descobreix els meus projectes destacats i el meu treball</p>
+    <header>
+        <nav class="logo">
+            <button>logo</button>
+        </nav>
+        <h1>Header</h1>
+        <nav class="menu">
+            <input type="text" placeholder="nav - menú">
+        </nav>
+    </header>
+   
+    <main>
+        <section class="presentacio">
+            <h1>benvinguda</h1>
+            <h2>sobre mi</h2>
+            <p>bibliografia</p>
         </section>
-        
-        <section class="projects-section">
-            <h2>Projectes Destacats</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="placeholder">AI</div>
-                    </div>
-                    <h3>Aplicació de Gestió d'Inventari</h3>
-                    <p>Sistema avançat per gestionar inventaris en temps real amb integració d'intel·ligència artificial per predir necessitats.</p>
-                    <a href="detall-projecte1.html" class="btn">Veure Detalls</a>
+       
+        <section class="projectes-destacats">
+            <h1>projectes</h1>
+            <p>descripció</p>
+           
+            <div class="projecte-container">
+                <div class="projecte projecte-1">
+                    <p>projecte 1</p>
+                    <nav>
+                        <button>veure més detalls</button>
+                    </nav>
                 </div>
-                
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="placeholder">EDU</div>
-                    </div>
-                    <h3>Plataforma Educativa en Línia</h3>
-                    <p>Plataforma interactiva per a l'aprenentatge en línia amb funcionalitats de seguiment personalitzat i avaluació automàtica.</p>
-                    <a href="detall-projecte2.html" class="btn">Veure Detalls</a>
+               
+                <div class="projecte projecte-2">
+                    <p>projecte 2</p>
+                    <nav>
+                        <button>veure més detalls</button>
+                    </nav>
                 </div>
             </div>
         </section>
+       
+        <section class="contacta">
+            <h2>Contacta amb nosaltres</h2>
+            <nav>
+                <button>derivar a la pàgina de contacte</button>
+            </nav>
+        </section>
     </main>
-
+   
     <footer>
-        <p>&copy; 2025 Portfolio de Projectes. Tots els drets reservats.</p>
+        <p>copyright</p>
     </footer>
 </body>
 </html>
