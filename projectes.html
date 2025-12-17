@@ -1,41 +1,73 @@
 <!DOCTYPE html>
-<html lang="ca">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detall del Projecte - Plataforma Educativa</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">Portfolio</div>
-            <div class="nav-links">
-                <a href="index.html">Inici</a>
-                <a href="projectes.html">Projectes</a>
-                <a href="contacte.html">Contacte</a>
-            </div>
-        </nav>
-    </header>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Proyectos de Trishan Mizhquiri Valencia - Administrador de Sistemas y Redes">
+        <title>Proyectos | TRISHAN MIZHQUIRI VALENCIA</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+    <body>
+        <!-- Barra de navegación superior -->
+        <header class="topbar">
+            <div class="logo">TRISHAN MIZHQUIRI VALENCIA</div>
+            <nav class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="proyectos.html" class="active">Proyectos</a>
+                <a href="sobre-mi.html">Sobre mí</a>
+                <a href="habilidades.html">Habilidades</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </header>
 
-    <main>
-        <div class="page-content">
-            <a href="index.html" class="back-btn">&larr; Tornar a Inici</a>
-            
-            <div class="project-detail">
-                <h2>Plataforma Educativa en Línia</h2>
-                <p>Aquesta plataforma educativa revolucionària està dissenyada per oferir una experiència d'aprenentatge personalitzada i interactiva per a estudiants de tots els nivells. Desenvolupada amb Vue.js i Django, la plataforma combina contingut multimèdia, avaluacions adaptatives i eines de col·laboració en temps real.</p>
-                <p>Les funcionalitats clau inclouen: rutes d'aprenentatge personalitzades basades en el progrés individual, sistema de gamificació per motivar l'aprenentatge, classes virtuals en directe amb funcionalitats d'interacció, i un sistema d'avaluació automàtica que proporciona retroalimentació immediata.</p>
-                <p>La plataforma ha estat adoptada per més de 50 institucions educatives, servint a més de 10,000 estudiants i demostrant una millora del 35% en els resultats acadèmics en comparació amb mètodes tradicionals d'ensenyament.</p>
-                <p><strong>Tecnologies utilitzades:</strong> Vue.js, Django, PostgreSQL, WebRTC, Redis</p>
-                <p><strong>Durada del projecte:</strong> 8 mesos</p>
-                <p><strong>Equip:</strong> 5 desenvolupadors, 2 dissenyadors UX/UI, 3 especialistes en contingut educatiu</p>
-            </div>
-        </div>
-    </main>
+        <!-- Contenido principal -->
+        <main class="content">
+            <!-- Sección de proyectos -->
+            <section class="projects-section">
+                <h2 class="section-title">Proyectos Destacados</h2>
+                <p class="section-description">Estos son mis proyectos más relevantes como administrador de sistemas y redes con especialidad en ciberseguridad</p>
+                
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-image"><div class="placeholder">DB</div></div>
+                        <h3>Sistema de Filtraje de Bases de Datos</h3>
+                        <p>Implementación de un sistema avanzado de filtrado y monitoreo de bases de datos para detectar accesos no autorizados y actividades sospechosas. Utilizando scripts en bash personalizados, auditorías de seguridad automatizadas y herramientas de monitorización en tiempo real para proteger la integridad de los datos críticos de la organización.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image"><div class="placeholder">IA</div></div>
+                        <h3>Desarrollo de Webs mediante IA</h3>
+                        <p>Desarrollo de aplicaciones web utilizando inteligencia artificial para optimizar la administración de servidores y redes. Implementación de chatbots para soporte técnico automatizado y sistemas de detección de anomalías en el tráfico de red mediante algoritmos de machine learning, reduciendo el tiempo de respuesta ante incidentes en un 40%.</p>
+                    </article>
+                </div>
 
-    <footer>
-        <p>&copy; 2025 Portfolio de Projectes. Tots els drets reservats.</p>
-    </footer>
-</body>
+                <div class="page-nav">
+                    <a href="index.html" class="prev">
+                        <i class="fas fa-arrow-left"></i> Página de Inicio
+                    </a>
+                    <a href="sobre-mi.html" class="next">
+                        Sobre Mí <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 TRISHAN MIZHQUIRI VALENCIA. Administrador de Sistemas y Redes con especialidad en Ciberseguridad.</p>
+        </footer>
+
+        <script>
+            // Highlight active page
+            document.addEventListener('DOMContentLoaded', function() {
+                const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+                document.querySelectorAll('.nav-links a').forEach(link => {
+                    if (link.getAttribute('href') === currentPage) {
+                        link.classList.add('active');
+                    } else {
+                        link.classList.remove('active');
+                    }
+                });
+            });
+        </script>
+    </body>
 </html>
